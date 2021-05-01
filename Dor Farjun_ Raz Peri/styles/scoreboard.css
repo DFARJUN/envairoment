@@ -1,0 +1,117 @@
+:root {
+    --darkgreen: #008a4b;
+    --green: #a1cc3a;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Varela+Round&display=swap');
+body {
+    min-height: 98vh;
+    background-image: url('background.png');
+    background-size: auto 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    direction:rtl;
+}
+
+h1 {
+   display:block;
+    width: 60% !important;
+    margin: 0 auto;
+    text-align:center;
+    font-size:47px;
+
+}
+
+table {
+    background-color: whitesmoke;
+    width: 60% !important;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    border-collapse: collapse;
+    overflow: hidden;
+    border:none;
+    margin-bottom:20px;
+}
+
+th {
+    background-color: var(--darkgreen);
+    color: white;
+    height: 44px;
+    border: none;
+    font-size: 30px;
+    width: 45% !important;
+}
+
+td{
+    height:50px;
+    font-size:20px;
+    width:45% !important;
+    border:none;
+}
+
+tbody tr td:first-child{
+    width:10% !important;
+}
+
+tbody tr th:first-child{
+    width:10% !important;
+}
+
+tbody tr:nth-child(even) {
+    background-color: RGBA(37, 102, 112, 0.06);
+}
+
+tbody tr:hover {
+    background-color: RGBA(37, 102, 112, 0.08);
+}
+
+#serchName {
+    margin: 7px auto;
+    display: block;
+    width: 37%;
+    border-radius: 26px;
+    height: 30px;
+    border: none;
+    padding: 0 7px;
+    margin-bottom:20px;
+}
+
+    #serchName:focus {
+        outline: none;
+        background-color: #E9EDEE;
+    }
+
+
+
+/*nav*/
+header {
+    width: 100%;
+    position: 0 0;
+    background-color: white;
+    margin-bottom:15px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+    li a {
+        display: block;
+        color:var(--darkgreen);
+        text-align: center;
+        padding: 14px 36px;
+        text-decoration: none;
+    }
+
+        li a:hover {
+            background-color: var(--green);
+            color:black;
+        }
